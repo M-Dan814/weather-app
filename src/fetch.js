@@ -15,7 +15,11 @@ async function getData() {
     color(weather);
     console.log(weather);
   } catch (err) {
-    console.log(err);
+    const error = document.createElement("h1");
+    error.textContent = err;
+    const body = document.querySelector("#content");
+    body.innerHTML = "";
+    body.append(error);
   }
 }
 

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.init-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#city {
+  padding: 6px;
+  border: 1px;
+  background-color: rgb(196, 255, 255);
+  border-radius: 3px;
+}
+
+#city:focus {
+  background-color: rgb(212, 245, 245);
+}
+
+#submit {
+  background-color: green;
+  padding: 8px;
+  border-radius: 3px;
+  border: 0;
+  color: white;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgb(196, 236, 248);
+  color: green;
+}
+
+#content {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.default {
+  background-color: grey;
+  color: white;
+}
+
+.sunny {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("./img/sunny.jpg");
+  background-size: cover;
+}
+
+.mist {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./img/misty.jpg");
+  background-size: cover;
+}
+
+.cloud {
+  background-image: url("./img/cloudy.jpg");
+  background-size: cover;
+}
+
+.snow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("./img/snowy.jpg");
+  background-size: cover;
+}
+
+.rain {
+  background-image: url("./img/rainy.jpg");
+  background-size: cover;
+}
+
+.tornado {
+  background-image: url("./img/tornado.jpg");
+  background-size: cover;
+}
+
+.squall {
+  background-image: url("./img/squall.jpg");
+  background-size: cover;
+}
