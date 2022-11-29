@@ -1,5 +1,5 @@
 import { DOM } from "./DOM";
-
+import { color } from "./Bgcolor";
 
 async function getData() {
   try {
@@ -12,6 +12,7 @@ async function getData() {
     const weather = [];
     weather.push(data.name, data.main, data.weather);
     DOM(weather);
+    color(weather);
     console.log(weather);
   } catch (err) {
     console.log(err);
